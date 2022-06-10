@@ -15,6 +15,7 @@
             <artifactId>spring-boot-maven-plugin</artifactId>
             <executions>
                 <execution>
+                    <id>repackage</id>
                     <goals>
                         <goal>build-info</goal>
                     </goals>
