@@ -9,13 +9,13 @@
     <version>1.0</version>
 
     <build>
+        <sourceDirectory>src</sourceDirectory>
     <plugins>
         <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
             <executions>
                 <execution>
-                    <id>repackage</id>
                     <goals>
                         <goal>build-info</goal>
                     </goals>
