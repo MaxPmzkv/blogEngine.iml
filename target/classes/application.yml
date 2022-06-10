@@ -1,4 +1,3 @@
-#spring.datasource.url: jdbc:mysql://localhost:3306/skillboxblogengine?serverTimezone=Europe/Moscow
 spring:
   datasource:
     url:  jdbc:${FREEMYSQL_CONNECTOR:mysql://localhost:3306/skillboxblogengine}
