@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url:  jdbc:${FREEMYSQL_CONNECTOR:mysql://localhost:3306/skillboxblogengine}
+username: root
+spring.datasource.password: testtest
+spring.jpa.generate-ddl: false
+spring.jpa.show-sql: false
+spring.jpa.hibernate.ddl-auto: none
+
+server:
+  port: ${PORT:8080}
+flyway:
+    baseline-on-migrate: true
+    enabled: true
+
+spring.mail:
+  host: smtp.mailtrap.io
+  username: eb69fc25b7bd1f
+  password: ec3bae56e96259
+  port: 2525
+mail.debug: true
+
+
+blog:
+  title: DevPub
+  subtitle: Рассказы разработчиков
+  phone: +7 926 910 11 30
+  email: mail@mail.ru"
+  copyright: <Raz Dva>
+  copyrightFrom: 2010

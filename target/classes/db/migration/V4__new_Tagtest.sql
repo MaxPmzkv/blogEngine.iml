@@ -1,0 +1,1 @@
+insert into tag2post (post_id, tag_id) values('3', '1');
