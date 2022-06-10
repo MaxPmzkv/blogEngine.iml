@@ -9,9 +9,9 @@
     <version>1.0</version>
 
     <build>
-        <sourceDirectory>src</sourceDirectory>
     <plugins>
         <plugin>
+
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
             <executions>
@@ -22,6 +22,7 @@
                 </execution>
             </executions>
             <configuration>
+                <mainClass>src.Main.java.main.Main</mainClass>
                 <addResources>true</addResources>
                 <additionalProperties>
                     <encoding.source>${project.build.sourceEncoding}</encoding.source>
