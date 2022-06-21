@@ -41,6 +41,7 @@ public class CalendarService {
         }
 
         return new CalendarResponse(years, posts);
+
     }
 
 }

@@ -88,7 +88,7 @@ public class PostService {
     public PostsResponse getPostsByDate(int offset, int limit, String date) {
         Pageable pageable;
         pageable = PageRequest.of(offset / limit, limit);
-        Page<Post> pageByQuery = postRepository.getPostByQuery(date, pageable);
+        Page<Post> pageByQuery = postRepository.findAllPostsByDate(date, pageable);
         return createPostsResponse(pageByQuery, (int) pageByQuery.getTotalElements());
     }
 
